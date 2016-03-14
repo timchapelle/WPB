@@ -38,18 +38,16 @@ h1 img{
 h1, .sousTitre {
   color: green;
 }
-.sousTitre {
-  position: relative;
-  border-left:   3px solid green;
-  border-bottom: 1px solid green;
-  padding-left:              5px;
-  padding-right:           549px;
-  margin-left:              35px;
-  font-weight:            bolder;
+.conteneur {
+  height:          1105px;
+  width:            825px;
+  margin-left:      auto;
+  margin-right:     auto;
+  border: 2px solid green;
+  background-color:  #fff;
 }
-.sousArticle {
-  text-indent: 35px;
-  margin-top: -16px;
+.bg {
+  position: relative;
 }
 .menuHaut li {
   display: inline-block;
@@ -57,22 +55,10 @@ h1, .sousTitre {
   line-height:     25px;
   width:          150px;
   border-right: 2px solid white;
-
-
 }
 .menuHaut li a {
   text-decoration: none;
   color: #fff;
-}
-.bg {
-  position: relative;
-}
-.conteneur {
-  height:          1105px;
-  margin-left:      200px;
-  margin-right:     307px;
-  border: 2px solid green;
-  background-color:  #fff;
 }
 .article {
   text-indent: 35px;
@@ -85,6 +71,19 @@ h1, .sousTitre {
   display: inline-block;
   position:    absolute;
   width:          500px;
+}
+.sousTitre {
+  position: relative;
+  border-left:   3px solid green;
+  border-bottom: 1px solid green;
+  padding-left:              5px;
+  padding-right:           549px;
+  margin-left:              35px;
+  font-weight:            bolder;
+}
+.sousArticle {
+  text-indent: 35px;
+  margin-top: -16px;
 }
 #titre {
   vertical-align: top;
