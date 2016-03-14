@@ -46,9 +46,6 @@ h1, .sousTitre {
   border: 2px solid green;
   background-color:  #fff;
 }
-.bg {
-  position: relative;
-}
 .menuHaut li {
   display: inline-block;
   text-align:    center;
