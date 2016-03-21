@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="fr" author="T. Chapelle">
+    <title>Design coloré</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="conteneur">
+      <header>
+        <img src="img/apple.jpg" alt="Logo Pomme" />
+        <img src="img/title.gif" alt="Titre" id="titre" />
+      </header>
+      <nav>
+        <ul class="menuHaut">
+          <li id="menu1"><a href="index.html">Accueil</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="abonnes.html">Abonnés</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li id="menu5"><a href="#">Page 5</a></li>
+        </ul>
+      </nav>
+      <aside class="bg">
+        <img src="img/bg_page.gif" alt="" />
+      </aside>
+      <div class="articles">
+        <section>
+          <h1><img src="img/little_apple.gif" alt="" /> Contact</h1>
+          <hr />
+          <!-- <article class="article"> -->
+            <form action="contact.html" method="get">
+              <fieldset>
+                <legend>Informations personnelles</legend>
+                <table><tr><th>
+                <label for="civilite">Civilité</label></th>
+                <td><input type="radio" name="civilite" value="M.">
+                <label for="M.">M.</label>
+                <input type="radio" name="civ" value="Mme">
+                <label for="Mme">Mme</label></td></tr>
+                <tr><th><label for="nom">Nom</label></th>
+                <td><input type="text" name="nom" placeholder="Entrez votre nom..." required><span style="color:red">*</span></td></tr>
+                <tr><th><label for="prenom">Prénom</label></th>
+                <td><input type="texte" name="prenom" placeholder="Entrez votre prénom..."></td></tr>
+                <th><label for="age">Âge</label></th>
+                <td><select name="age">
+                  <option value="-18">- de 18 ans</option>
+                  <option value="18-25">18-25 ans</option>
+                  <option value="25-50">25-50 ans</option>
+                  <option value="+50">+ de 50 ans</option>
+                </select></td></tr>
+                <tr><th><label for="occupations">Occupations</label></th>
+                  <td><input type="checkbox" name="sport"><label for="sport">Sport</label>
+                  <input type="checkbox" name="musique"><label for="sport">Musique</label>
+                  <input type="checkbox" name="info"><label for="sport">Informatique</label></td>
+                </tr>
+                </table>
+              </fieldset>
+              <br />
+              <fieldset id="formulaire">
+                <legend>Adresse de contact</legend>
+                <table>
+                  <tr>
+                    <th><label for="adresse">Adresse</label></th>
+                    <td><textarea name="adresse" placeholder="Entrez votre adresse..." rows="4"></textarea></td>
+                  </tr>
+                  <tr>
+                    <th><label for="pays">Pays</label></th>
+                    <td><select name="pays">
+                      <optgroup label="Europe">
+                        <option value="belgique">Belgique</option>
+                        <option value="france">France</option>
+                        <option value="paysbas">Pays-Bas</option>
+                      </optgroup>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <th><label for="tel">Tel.</label></th>
+                    <td><input type="tel" name="tel" placeholder="N° de tel." required><span style="color:red">*</span>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>
+                      <input type="reset" name="reset" value="Réinitialiser" id="annuler">
+                      <input type="image" name="envoyer" src="img/valider.png"></td>
+                  </tr>
+                </table>
+              </fieldset>
+            </form>
+        </section>
+      </div>
+      <section>
+        <footer>
+          <p>
+            Informations de pied-de-page
+          </p>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

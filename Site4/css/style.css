@@ -23,14 +23,10 @@ hr {
   border: 1px solid green;
 }
 footer {
-  display: inline-block;
-  position:    absolute;
-  width:          300px;
-  margin-left:    460px;
-  margin-top:     368px;
-  color:          green;
-  font-weight:     bold;
-  font-size:      0.9em;
+  text-align: right;
+  margin-right: -110px;
+  color: green;
+  font-weight: bold;
 }
 h1 img{
   vertical-align: middle;
@@ -38,9 +34,43 @@ h1 img{
 h1, .sousTitre {
   color: green;
 }
+audio {
+  padding:8px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+audio:hover {
+  background-color: green;
+}
+video {
+  width: 465px;
+  margin-top: 10px;
+  margin-top: 30px;
+  margin-left: 10%;
+  padding:8px;
+  background-color: lightgreen;
+  border-radius: 5px;
+}
+video:hover {
+  background-color: green;
+}
+table a {
+  color: green;
+}
+th {text-align: left;}
+fieldset {border: 2px solid green;}
+legend {color: green;
+font-weight: bold;}
+.active {
+  background-color: green;
+}
+.bg {vertical-align: top;}
 .conteneur {
-  height:          1105px;
+  height:           auto;
   width:            825px;
+  min-width:        825px;
   margin-left:      auto;
   margin-right:     auto;
   border: 2px solid green;
@@ -57,6 +87,9 @@ h1, .sousTitre {
   text-decoration: none;
   color: #fff;
 }
+.menuHaut li a:hover {
+  color: grey;
+}
 .article {
   text-indent: 35px;
 }
@@ -66,15 +99,14 @@ h1, .sousTitre {
 }
 .articles {
   display: inline-block;
-  position:    absolute;
+!  position:    absolute;
   width:          500px;
 }
 .sousTitre {
   position: relative;
   border-left:   3px solid green;
   border-bottom: 1px solid green;
-  padding-left:              5px;
-  padding-right:           549px;
+  padding-right:          465px;
   margin-left:              35px;
   font-weight:            bolder;
 }
@@ -88,4 +120,19 @@ h1, .sousTitre {
 }
 #menu1 {
   margin-left: -40px;
+}
+#annuler {
+  background-color: black;
+  color: #24fb36;
+  border-radius: 20px;
+  height:32px;
+  width:150px;
+  font-style: italic;
+  border: transparent;
+  font-size: 1.1em;
+  position: relative;
+  bottom: 14px;
+}
+#formulaire td {
+  padding-left: 38px;
 }
